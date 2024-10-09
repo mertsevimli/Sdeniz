@@ -1,0 +1,86 @@
+@model IEnumerable<Sdeniz.Entities.Post>
+
+@{
+    ViewData["Title"] = "İçerikler";
+}
+
+<p>
+    <a class="btn btn-outline-primary" asp-action="Create">Yeni Ekle</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.Name)</th>
+            <th>@Html.DisplayNameFor(model => model.Image)</th>
+            <th>@Html.DisplayNameFor(model => model.IsActive)</th>
+            <th>@Html.DisplayNameFor(model => model.CreateDate)</th>
+            <th>@Html.DisplayNameFor(model => model.UpdateDate)</th>
+            <th>@Html.DisplayNameFor(model => model.Category)</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.Name)</td>
+
+            <td>
+                <!-- Resim modal ile tıklanabilir hale getirildi -->
+                <img src="/Img/@item.Image" width="90" style="cursor: pointer;" onclick="showImageModal('/Img/@item.Image')" />
+            </td>
+
+            <td>@Html.DisplayFor(modelItem => item.IsActive)</td>
+            <td>@Html.DisplayFor(modelItem => item.CreateDate)</td>
+            <td>@Html.DisplayFor(modelItem => item.UpdateDate)</td>
+            
+            <td>
+                <!-- Kategori varsa göster, yoksa 'Belirtilmemiş' yaz -->
+                @if (item.Category != null)
+                {
+                    @item.Category.Name
+                }
+                else
+                {
+                    <span class="text-muted">Belirtilmemiş</span>
+                }
+            </td>
+
+            <td>
+                <a class="btn btn-primary" asp-action="Edit" asp-route-id="@item.Id">Düzenle</a> |
+                <a class="btn btn-info" asp-action="Details" asp-route-id="@item.Id">Detay</a> |
+                <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">Sil</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+
+<!-- Modal yapısı -->
+<div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="imageModalLabel">Resim Önizlemesi</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img id="modalImage" src="" class="img-fluid" alt="Resim">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- JavaScript ile Modal açma fonksiyonu -->
+<script>
+    function showImageModal(imageUrl) {
+        // Modal içindeki resmi güncelle
+        document.getElementById("modalImage").src = imageUrl;
+
+        // Modal'ı aç
+        $('#imageModal').modal('show');
+    }
+</script>
