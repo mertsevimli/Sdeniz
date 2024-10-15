@@ -9,10 +9,11 @@ using Sdeniz.Data;
 using Sdeniz.Entities;
 using Microsoft.AspNetCore.Http;
 using System.IO;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Sdeniz.Areas.Admin.Controllers
 {
-    [Area("Admin")]
+    [Area("Admin"), Authorize]
     public class PostController : Controller
     {
         private readonly DataBaseContext _context;

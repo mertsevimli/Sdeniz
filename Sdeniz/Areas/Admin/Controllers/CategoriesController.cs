@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO; // Dosya işlemleri için eklenmeli
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http; // IFormFile kullanımı için gerekli
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -11,7 +12,7 @@ using Sdeniz.Entities;
 
 namespace Sdeniz.Areas.Admin.Controllers
 {
-    [Area("Admin")]
+    [Area("Admin"), Authorize]
     public class CategoriesController : Controller
     {
         private readonly DataBaseContext _context;

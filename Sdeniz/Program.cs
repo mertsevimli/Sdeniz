@@ -1,10 +1,21 @@
+using System.Runtime.Intrinsics.X86;
 using Sdeniz.Data;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<DataBaseContext>();
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(x =>
+{
+    x.LoginPath = "/Admin/Login";
+    x.AccessDeniedPath = "/AccessDenied";
+    x.LoginPath = "/Admin/Logout";
+    x.Cookie.Name = "Admin";
+   
+    x.Cookie.IsEssential = true;
+});
 
 var app = builder.Build();
 
@@ -21,11 +32,13 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-app.UseAuthorization();
+
+app.UseAuthentication();// ilk bu Login için 
+app.UseAuthorization();// sonra bu (yetkilendirme)
 
 app.MapControllerRoute(
     name : "admin",
-    pattern : "{area:exists}/{controller=Main}/{action=Index}/{id?}"
+    pattern : "{area:exists}/{controller=Home}/{action=Index}/{id?}"
 );
 
 app.MapControllerRoute(

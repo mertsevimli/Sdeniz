@@ -1,0 +1,14 @@
+@model Sdeniz.Entities.User
+
+<h2>Kullanıcı Detayları</h2>
+
+<dl>
+    <dt>@Html.DisplayNameFor(model => model.Name)</dt>
+    <dd>@Html.DisplayFor(model => model.Name)</dd>
+    
+    <dt>@Html.DisplayNameFor(model => model.Email)</dt>
+    <dd>@Html.DisplayFor(model => model.Email)</dd>
+    
+    <dt>@Html.DisplayNameFor(model => model.IsAdmin)</dt>
+    <dd>@Html.DisplayFor(model => model.IsAdmin)</dd>
+</dl>

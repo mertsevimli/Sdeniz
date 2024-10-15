@@ -1,62 +1,59 @@
 @model IEnumerable<Sdeniz.Entities.Category>
 
 @{
-    ViewData["Title"] = "Kategoriler";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+ViewData["Title"] = "Kategoriler";
 }
-
-<h1>Kategoriler</h1>
 
 <p>
     <a class="btn btn-outline-primary" asp-action="Create">Yeni Ekle</a>
 </p>
+
 <table class="table">
     <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Description)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Image)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.IsActive)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CreateDate)
-            </th>
-            <th></th>
-        </tr>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Image)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsActive)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CreateDate)
+        </th>
+        <th></th>
+    </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Description)
-            </td>
-            <td>
-              
-                <img src="/Img/@item.Image" width="90" style="cursor: pointer;" onclick="showImageModal('/Img/@item.Image')" />
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IsActive)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CreateDate)
-            </td>
-            <td>
-                <a class="btn btn-primary" asp-action="Edit" asp-route-id="@item.Id">Düzenle</a> |
-                <a class="btn btn-info" asp-action="Details" asp-route-id="@item.Id">Detay</a> |
-                <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">Sil</a>
-            </td>
-        </tr>
-}
+    @foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            <img src="/Img/@item.Image" width="90" style="cursor: pointer;" onclick="showImageModal('/Img/@item.Image')" />
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsActive)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CreateDate)
+        </td>
+        <td>
+            <a class="btn btn-primary" asp-action="Edit" asp-route-id="@item.Id">Düzenle</a> |
+            <a class="btn btn-info" asp-action="Details" asp-route-id="@item.Id">Detay</a> |
+            <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">Sil</a>
+        </td>
+    </tr>
+    }
     </tbody>
 </table>
 
@@ -66,7 +63,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="imageModalLabel">Kategori Resmi</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <button type="button" id="close" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
@@ -85,6 +82,14 @@
         // Modal'ı aç
         $('#imageModal').modal('show');
     }
+
+    const closeButton = document.getElementById("close");
+
+    closeButton.addEventListener("click", () => {
+        $('#imageModal').modal('hide'); // 'close' yerine 'hide' kullanılmalı
+    });
 </script>
 
 <!-- jQuery ve Bootstrap kütüphanelerini ekleyin -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>

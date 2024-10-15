@@ -56,7 +56,7 @@ namespace Sdeniz.Migrations
                         new
                         {
                             Id = 1,
-                            CreateDate = new DateTime(2024, 10, 9, 15, 19, 54, 81, DateTimeKind.Local).AddTicks(8620),
+                            CreateDate = new DateTime(2024, 10, 15, 14, 5, 58, 21, DateTimeKind.Local).AddTicks(7370),
                             Image = "default-image.jpg",
                             IsActive = true,
                             Name = "Genel"
@@ -132,8 +132,7 @@ namespace Sdeniz.Migrations
 
                     b.Property<string>("Password")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Surname")
                         .IsRequired()
@@ -152,7 +151,7 @@ namespace Sdeniz.Migrations
                         new
                         {
                             Id = 1,
-                            CreateDate = new DateTime(2024, 10, 9, 15, 19, 54, 81, DateTimeKind.Local).AddTicks(8740),
+                            CreateDate = new DateTime(2024, 10, 15, 14, 5, 58, 21, DateTimeKind.Local).AddTicks(7480),
                             Email = "admin@sarideniz.com",
                             IsActive = true,
                             IsAdmin = true,

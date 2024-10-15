@@ -7,12 +7,17 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <PackageReference Include="BCrypt.Net-Next" Version="4.0.2" />
       <PackageReference Include="bootstrap" Version="5.3.3" />
       <PackageReference Include="jQuery" Version="3.7.1" />
       <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.10" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.10">
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        <PrivateAssets>all</PrivateAssets>
+      </PackageReference>
       <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.10" />
-      <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.8" />
-      <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.8">
+      <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.10" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.10">
         <PrivateAssets>all</PrivateAssets>
         <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       </PackageReference>
@@ -26,8 +31,12 @@
     </ItemGroup>
 
     <ItemGroup>
+      <AdditionalFiles Include="Areas\Admin\Views\Login\Create.cshtml" />
+      <AdditionalFiles Include="Areas\Admin\Views\Login\Delete.cshtml" />
+      <AdditionalFiles Include="Areas\Admin\Views\Login\Details.cshtml" />
+      <AdditionalFiles Include="Areas\Admin\Views\Login\Edit.cshtml" />
+      <AdditionalFiles Include="Areas\Admin\Views\Login\Index.cshtml" />
       <AdditionalFiles Include="Areas\Admin\Views\Shared\Error.cshtml" />
-      <AdditionalFiles Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
       <AdditionalFiles Include="Areas\Admin\Views\Shared\_ValidationScriptsPartial.cshtml" />
     </ItemGroup>
 
@@ -37,6 +46,19 @@
       <_ContentIncludedByDefault Remove="Areas\Admin\Views\Category\Details.cshtml" />
       <_ContentIncludedByDefault Remove="Areas\Admin\Views\Category\Edit.cshtml" />
       <_ContentIncludedByDefault Remove="Areas\Admin\Views\Category\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\Users\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\Users\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\Users\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\Users\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\Users\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\Account\Login.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\Account\Password.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\Account\Register.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\Login\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\Login\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\Login\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\Login\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\Login\Index.cshtml" />
     </ItemGroup>
 
 </Project>
