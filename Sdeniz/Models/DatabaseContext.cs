@@ -8,6 +8,13 @@ namespace Sdeniz.Data
         public DbSet<Category> Categories { get; set; }
         public DbSet<Post> Posts { get; set; }
         public DbSet<User> Users { get; set; }
+        
+        public DbSet<Musteri> Musteri { get; set; }
+        public DbSet<Post> Rol { get; set; }
+        public DbSet<Satici> Satici { get; set; }
+        public DbSet<Satis> Satis { get; set; }
+        public DbSet<Urun> Urun { get; set; }
+        
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

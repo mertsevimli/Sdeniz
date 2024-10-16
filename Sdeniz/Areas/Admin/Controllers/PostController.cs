@@ -13,7 +13,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace Sdeniz.Areas.Admin.Controllers
 {
-    [Area("Admin"), Authorize]
+    [Area("Admin")]
     public class PostController : Controller
     {
         private readonly DataBaseContext _context;

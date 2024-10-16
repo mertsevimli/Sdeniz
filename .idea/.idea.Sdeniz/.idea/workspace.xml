@@ -9,36 +9,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e83cf7f-e9d1-426b-8207-79b55179d581" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Sdeniz/Controllers/LoginController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sdeniz/Views/Login/Create.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sdeniz/Views/Login/Delete.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sdeniz/Views/Login/Details.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sdeniz/Views/Login/Edit.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sdeniz/Views/Login/Index.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sdeniz/wwwroot/css/sign-in.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Sdeniz/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Sdeniz/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sdeniz/Models/Musteri.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sdeniz/Models/Rol.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sdeniz/Models/Satici.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sdeniz/Models/Satis.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sdeniz/Models/Urun.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Sdeniz/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Sdeniz/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sdeniz/Areas/Admin/Controllers/AccountController.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Sdeniz/Areas/Admin/Controllers/CategoriesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sdeniz/Areas/Admin/Controllers/CategoriesController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sdeniz/Areas/Admin/Controllers/MainController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sdeniz/Areas/Admin/Controllers/MainController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sdeniz/Areas/Admin/Controllers/PostController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sdeniz/Areas/Admin/Controllers/PostController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sdeniz/Areas/Admin/Views/Account/Login.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sdeniz/Areas/Admin/Views/Account/Password.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sdeniz/Areas/Admin/Views/Account/Register.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sdeniz/Areas/Admin/Views/Categories/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Sdeniz/Areas/Admin/Views/Categories/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sdeniz/Areas/Admin/Views/Post/Create.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Sdeniz/Areas/Admin/Views/Post/Create.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sdeniz/Areas/Admin/Views/Post/Delete.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Sdeniz/Areas/Admin/Views/Post/Delete.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sdeniz/Areas/Admin/Views/Post/Details.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Sdeniz/Areas/Admin/Views/Post/Details.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sdeniz/Areas/Admin/Views/Post/Edit.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Sdeniz/Areas/Admin/Views/Post/Edit.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sdeniz/Areas/Admin/Views/Post/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Sdeniz/Areas/Admin/Views/Post/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sdeniz/Entities/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sdeniz/Entities/User.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sdeniz/Data/DatabaseContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sdeniz/Models/DatabaseContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sdeniz/Entities/Category.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sdeniz/Models/Category.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sdeniz/Entities/Post.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sdeniz/Models/Post.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sdeniz/Entities/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sdeniz/Models/User.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sdeniz/Migrations/DataBaseContextModelSnapshot.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Sdeniz/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sdeniz/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sdeniz/Sdeniz.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Sdeniz/Sdeniz.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sdeniz/wwwroot/Img/4.webp" beforeDir="false" afterPath="$PROJECT_DIR$/Sdeniz/wwwroot/Img/4.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sdeniz/wwwroot/Img/Ekran Resmi 2024-10-09 23.06.04.png" beforeDir="false" afterPath="$PROJECT_DIR$/Sdeniz/wwwroot/Img/Ekran Resmi 2024-10-09 23.06.04.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sdeniz/wwwroot/Img/Ekran Resmi 2024-10-09 23.50.57.png" beforeDir="false" afterPath="$PROJECT_DIR$/Sdeniz/wwwroot/Img/Ekran Resmi 2024-10-09 23.50.57.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sdeniz/wwwroot/Img/Not Defteri.png" beforeDir="false" afterPath="$PROJECT_DIR$/Sdeniz/wwwroot/Img/Not Defteri.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sdeniz/wwwroot/Img/WhatsApp Image 2024-10-08 at 09.50.36.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/Sdeniz/wwwroot/Img/WhatsApp Image 2024-10-08 at 09.50.36.jpeg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,19 +50,24 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;mertsevimli&quot;
-  }
+  &quot;history&quot;: [
+    {
+      &quot;state&quot;: &quot;OPEN&quot;,
+      &quot;assignee&quot;: &quot;mertsevimli&quot;,
+      &quot;author&quot;: &quot;mertsevimli&quot;
+    }
+  ],
+  &quot;lastFilter&quot;: {}
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/mertsevimli/ProjeS.git&quot;,
+    &quot;url&quot;: &quot;https://github.com/mertsevimli/Sdeniz.git&quot;,
     &quot;accountId&quot;: &quot;bafe69da-dfd7-45f8-8f5b-99868a0e4745&quot;
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Sdeniz/Areas/Admin/Views/Shared/_AdminLayout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Downloads/.net-MVC-main 2/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/292b05efaa7141b199751f5f5e932566d82000/7f/1da31591/IDictionary`2.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiPersistence">{}</component>
@@ -86,7 +76,7 @@
 }</component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="Toolset" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -99,23 +89,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.Sdeniz: http.executor": "Run",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.Sdeniz: http.executor&quot;: &quot;Run&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.Sdeniz: http">
     <configuration name="Sdeniz: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Sdeniz/Sdeniz.csproj" />
@@ -178,7 +168,8 @@
       <workItem from="1728916794768" duration="348000" />
       <workItem from="1728930604408" duration="483000" />
       <workItem from="1728931226282" duration="113000" />
-      <workItem from="1728931378229" duration="12845000" />
+      <workItem from="1728931378229" duration="23909000" />
+      <workItem from="1729015466573" duration="15789000" />
     </task>
     <task id="LOCAL-00001" summary="10 Ekim Proje">
       <option name="closed" value="true" />
@@ -196,7 +187,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728507829161</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="15 ekim Salı">
+      <option name="closed" value="true" />
+      <created>1729003900670</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1729003900670</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,7 +219,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="HEAD" />
                       </list>
                     </value>
                   </entry>
@@ -236,6 +235,7 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="10 Ekim Proje" />
     <MESSAGE value="10 Ekim Proje Sdeniz" />
-    <option name="LAST_COMMIT_MESSAGE" value="10 Ekim Proje Sdeniz" />
+    <MESSAGE value="15 ekim Salı" />
+    <option name="LAST_COMMIT_MESSAGE" value="15 ekim Salı" />
   </component>
 </project>

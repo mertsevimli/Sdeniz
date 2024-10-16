@@ -11,12 +11,16 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
 {
     x.LoginPath = "/Admin/Login";
     x.AccessDeniedPath = "/AccessDenied";
-    x.LoginPath = "/Admin/Logout";
+    x.LogoutPath = "/Admin/Logout";
     x.Cookie.Name = "Admin";
-   
+    x.Cookie.MaxAge = TimeSpan.FromDays(1);
     x.Cookie.IsEssential = true;
 });
-
+builder.Services.AddAuthorization(x =>
+{
+    x.AddPolicy("AdminPolicy", policy => policy.RequireClaim("Role", "Admin"));
+    x.AddPolicy("UserPolicy", policy => policy.RequireClaim("Role", "User"));
+});
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

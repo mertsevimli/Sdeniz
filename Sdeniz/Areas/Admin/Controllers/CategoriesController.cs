@@ -12,7 +12,7 @@ using Sdeniz.Entities;
 
 namespace Sdeniz.Areas.Admin.Controllers
 {
-    [Area("Admin"), Authorize]
+    [Area("Admin")]
     public class CategoriesController : Controller
     {
         private readonly DataBaseContext _context;

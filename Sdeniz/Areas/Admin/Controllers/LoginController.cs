@@ -61,7 +61,7 @@ namespace Sdeniz.Controllers
                     }
                     else
                     {
-                        return RedirectToAction("Index","Main", "Home");
+                        return RedirectToAction("Index","Main" ,"Home");
                     }
                 }
             }
